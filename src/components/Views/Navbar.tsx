@@ -5,6 +5,7 @@ import Image from 'next/image'
 import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nextjs/components";
 import { SearchIcon, ShoppingCart } from 'lucide-react';
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server"
+import { DropdownMenuDemo } from '../ui/Avatardispaly';
 
 interface navArray {
     label: string
@@ -59,7 +60,7 @@ const Navbar = () => {
             variant:'secondary',
             size:'sm'
         })}>Sign up</RegisterLink></div>):(
-            'hi'
+            <DropdownMenuDemo/>
         )}
     </div>
   </div>
