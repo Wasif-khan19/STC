@@ -44,7 +44,7 @@ import {
                 </DropdownMenuItem>
                 <DropdownMenuItem className="hover:bg-[#3BB77E] hover:text-white">
                     <Github className="mr-2 h-4 w-4" />
-                    <Link target="_blank" href={"    "}>GitHub</Link>
+                    <Link target="_blank" href={"    "}>About</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="hover:bg-[#3BB77E] hover:text-white">
                     <LifeBuoy className="mr-2 h-4 w-4" />

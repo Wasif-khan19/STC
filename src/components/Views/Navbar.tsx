@@ -39,7 +39,7 @@ const Navbar = () => {
       <Link href="/" className="flex title-font font-medium items-center mb-4 md:mb-0">
         <Image src={"/STC.png"} width={120} height={100} alt="Saras trading co. STC rice, spices, pulses, dry fruits"/>
       </Link>
-      <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center justify-center gap-2">
+      <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center justify-center gap-1">
         {navArray.map((item, index)=>(
              // eslint-disable-next-line react/jsx-key
              <Link key={index} href={item.href} className="cursor-pointer hover:underline mr-5 hover:text-[#3BB77E] text-[#504E4E] font-semibold text-lg duration-300">{item.label}</Link>
