@@ -4,10 +4,10 @@ import { ArrowRight } from "lucide-react";
 
 const Landingpage = () => {
   return (
-    <section className="text-gray-600 body-font bg-[#DEF9EC]">
-      <div className="container mx-auto flex px-5 py-30 md:py-14 lg:py-0 md:flex-row flex-col items-center">
+    <section className="body-font bg-[#C5EAD9]">
+      <div className="container mx-auto flex px-5 py-24 md:py-14 lg:py-0 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center gap-y-4">
-          <h1 className="max-w-lg xl:max-w-2xl text-4xl md:text-5xl xl:text-[50px] font-bold text-[#504E4E]">
+          <h1 className="max-w-lg xl:max-w-2xl text-4xl md:text-5xl xl:text-[50px] font-bold text-[#253D4E]">
             All Your Kitchen Essentials
             <br className="hidden lg:inline-block" /> in one Place
           </h1>
@@ -25,7 +25,7 @@ const Landingpage = () => {
           </div>
         </div>
         <Image
-          src={"/A.png"}
+          src={"/B.png"}
           width={600}
           height={720}
           alt=""

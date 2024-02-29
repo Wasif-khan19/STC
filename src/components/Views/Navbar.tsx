@@ -34,7 +34,7 @@ const Navbar = () => {
     const {getUser} = getKindeServerSession();
     const user = getUser();
   return (
-    <header className="text-gray-600 body-font">
+    <header className='body-font'>
     <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <Link href="/" className="flex title-font font-medium items-center mb-4 md:mb-0">
         <Image src={"/STC.png"} width={120} height={100} alt="Saras trading co. STC rice, spices, pulses, dry fruits"/>
@@ -42,7 +42,7 @@ const Navbar = () => {
       <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center justify-center gap-1">
         {navArray.map((item, index)=>(
              // eslint-disable-next-line react/jsx-key
-             <Link key={index} href={item.href} className="cursor-pointer hover:underline mr-5 hover:text-[#3BB77E] text-[#504E4E] font-semibold text-lg duration-300">{item.label}</Link>
+             <Link key={index} href={item.href} className="cursor-pointer hover:underline mr-5 text-[#253D4E] hover:text-[#3BB77E] font-semibold text-lg duration-300">{item.label}</Link>
         ))}
       </nav>
       <div className="flex space-x-4 items-center">
