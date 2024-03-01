@@ -18,7 +18,7 @@ const Landingpage = () => {
             flavor of your culinary creations.
           </p>
           <div className="flex justify-center">
-            <Button className="inline-flex text-white bg-[#3BB77E] border-0 py-2 px-6 focus:outline-none hover:bg-[#37996b] rounded text-lg">
+            <Button className="inline-flex text-white bg-[#3BB77E] border-0 py-2 px-6 focus:outline-none hover:bg-[#FDC040] rounded text-lg">
               Get started&nbsp;
               <ArrowRight size={17} />
             </Button>
