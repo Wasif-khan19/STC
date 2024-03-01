@@ -41,7 +41,6 @@ const Navbar = () => {
       </Link>
       <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center justify-center gap-1">
         {navArray.map((item, index)=>(
-             // eslint-disable-next-line react/jsx-key
              <Link key={index} href={item.href} className="cursor-pointer hover:underline mr-5 text-[#253D4E] hover:text-[#3BB77E] font-semibold text-lg duration-300">{item.label}</Link>
         ))}
       </nav>
