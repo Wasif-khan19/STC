@@ -15,7 +15,7 @@ const OurStory = () => {
            Our commitment to excellence is reflected in our extensive product line, featuring premium Basmati rice, aromatic spices, high-quality cooking oils, and a wide array of essential groceries. We understand the significance of top-tier ingredients in creating culinary masterpieces, and thats why our selection is curated with utmost care.
           </p>
           <span className="inline-block h-1 w-10 rounded bg-[#FDC040] mt-8 mb-6"></span>
-          <h2 className="text-[#3BB77E] font-medium title-font tracking-wider text-xl">
+          <h2 className="text-[#3BB77E] font-bold title-font tracking-wider text-xl">
             MUHAMMAD HUSSAIN
           </h2>
           <p className="text-gray-500">Founder</p>
