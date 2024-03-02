@@ -16,11 +16,11 @@ const ShopDetails = () => {
     />
     </div>
     <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">We Are Here To Respond You!</h1>
-      <p className="mb-8 leading-relaxed">Feel free to reach us out</p>
+      <h1 className="title-font sm:text-3xl text-3xl mb-5 font-bold text-gray-900">Subscribe To Get New Updates</h1>
+      <p className="mb-8 leading-relaxed text-sm">By subscribing, you will receive timely information about our products, services, and any exciting developments. Do not miss out on exclusive offers, promotions, and valuable insights. Your subscription ensures that you are among the first to know about anything new and noteworthy. Stay connected and be part of our community by subscribing today!</p>
       <div className="flex w-full md:justify-start justify-center items-end">
         <div className="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
-          <label htmlFor="hero-field" className="leading-7 text-sm text-gray-600">Subscribe To Get New Updates</label>
+          <label htmlFor="hero-field" className="leading-7 text-sm text-gray-600">Enter Your Email Below</label>
           <input type="text" id="hero-field" name="hero-field" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-[#a9fdd6] focus:bg-transparent focus:border-[#37996b] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
         </div>
         <button className="inline-flex bg-[#3BB77E] hover:bg-[#FDC040] text-white border-0 py-2 px-6 focus:outline-none rounded text-lg">Subscribe</button>

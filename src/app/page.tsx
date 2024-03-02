@@ -1,4 +1,3 @@
-import { Footer } from "@/components/Views/Footer";
 import Landingpage from "@/components/Views/LandingPage";
 import OurStory from "@/components/Views/OurStory";
 import ProductGridViewer from "@/components/Views/ProductGridViewer";
@@ -14,7 +13,6 @@ export default async function Home() {
       <ProductGridViewer ProducData={data.result.slice(0,3)}/>
       <OurStory/>
       <ShopDetails/>
-      {/* <Footer/> */}
     </>
   );
 }
