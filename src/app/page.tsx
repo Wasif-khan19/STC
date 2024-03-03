@@ -6,13 +6,14 @@ import { allProductFetcherFromSanity } from "@/components/utils/apicalling";
 import { allProductFetcherFromSanityType } from "@/components/utils/types";
 
 export default async function Home() {
-  let data = await allProductFetcherFromSanity() as allProductFetcherFromSanityType
+  let data =
+    (await allProductFetcherFromSanity()) as allProductFetcherFromSanityType;
   return (
     <>
       <Landingpage />
-      <ProductGridViewer ProducData={data.result.slice(0,3)}/>
-      <OurStory/>
-      <ShopDetails/>
+      <ProductGridViewer ProducData={data.result.slice(0, 3)} />
+      <OurStory />
+      <ShopDetails />
     </>
   );
 }

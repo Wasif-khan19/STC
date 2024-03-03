@@ -14,8 +14,8 @@ const ProductCard: FC<{ product: singleProductType }> = ({ product }) => {
                     className=" lg:h-48 md:h-36 w-full object-cover object-center"
                     src={urlForImage(product.image[0])}
                     alt='image'
-                    width={200}
-                    height={200}
+                    width={1000}
+                    height={1000}
                 />
                 <div className="p-6 text-center">
                     <h2 className="tracking-widest text-xs title-font font-medium mb-1 text-gray-400">CATEGORY</h2>

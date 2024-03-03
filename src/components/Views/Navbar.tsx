@@ -13,20 +13,28 @@ interface navArray {
 
 const navArray: navArray[] = [
     {
-        label:'Home',
-        href:'/'
-    },
-    {
         label:'Products',
         href:'/products'
     },
     {
-        label:'About',
-        href:'/about'
+        label:'Rice',
+        href:'/rice'
     },
     {
-        label:'Contact',
-        href:'/contact'
+      label:'Desserts',
+      href:'/desserts'
+    },
+    {
+      label:'Spices',
+      href:'/spices'
+    },
+    {
+      label:'Sauces',
+      href:'/sauces'
+    },
+    {
+      label:'Oil',
+      href:'/oil'
     },
 ]
 
@@ -36,12 +44,12 @@ const Navbar = () => {
   return (
     <header className='body-font'>
     <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
-      <Link href="/" className="flex title-font font-medium items-center mb-4 md:mb-0">
+      <Link href="/" className="flex title-font items-center mb-4 md:mb-0">
         <Image src={"/STC.png"} width={120} height={100} alt="Saras trading co. STC rice, spices, pulses, dry fruits"/>
       </Link>
       <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center justify-center gap-1">
         {navArray.map((item, index)=>(
-             <Link key={index} href={item.href} className="cursor-pointer hover:underline mr-5 text-[#253D4E] hover:text-[#3BB77E] font-semibold text-lg duration-300">{item.label}</Link>
+             <Link key={index} href={item.href} className="cursor-pointer hover:underline mr-5 text-[#253D4E] hover:text-[#3BB77E] font-normal text-base duration-300">{item.label}</Link>
         ))}
       </nav>
       <div className="flex space-x-4 items-center">

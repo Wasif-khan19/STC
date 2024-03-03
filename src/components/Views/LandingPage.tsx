@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button, buttonVariants } from "../ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const Landingpage = () => {
   return (
@@ -18,10 +19,9 @@ const Landingpage = () => {
             flavor of your culinary creations.
           </p>
           <div className="flex justify-center">
-            <Button className="inline-flex text-white bg-[#3BB77E] border-0 py-2 px-6 focus:outline-none hover:bg-[#FDC040] rounded text-lg">
+            <Link href={'/products'} className="inline-flex text-white bg-[#3BB77E] border-0 py-2 px-6 focus:outline-none hover:bg-[#FDC040] rounded text-lg">
               Get started&nbsp;
-              <ArrowRight size={17} />
-            </Button>
+            </Link>
           </div>
         </div>
         <Image

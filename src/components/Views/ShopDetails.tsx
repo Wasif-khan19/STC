@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { Mail } from "lucide-react";
+import { IoIosMail } from "react-icons/io";
 
 const ShopDetails = () => {
   return (
@@ -30,6 +30,7 @@ const ShopDetails = () => {
           </p>
           <div className="flex w-full md:justify-start justify-center items-end">
             <div className="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
+              <p className="text-xs font-light">Enter Your Email Below</p>
               <input
                 type="text"
                 id="hero-field"
@@ -45,17 +46,17 @@ const ShopDetails = () => {
             </Button>
           </div>
           <div className="flex-row lg:flex-row md:flex-row mt-10">
-            <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
-              <span className="ml-4items-start leading-none flex items-center gap-2">
-                <Mail />
+            <button className="bg-gray-300 inline-flex py-3 px-5 rounded-lg items-center">
+              <span className=" leading-none flex items-center gap-2 text-black">
+                <IoIosMail size={25} color="#ED0000" />
                 <span className="title-font font-normal text-sm">
                   Stcindus1@gmail.com
                 </span>
               </span>
             </button>
-            <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center lg:ml-2 md:ml-2 ml-0 md:mt-4 mt-2 lg:mt-2 hover:bg-gray-200 focus:outline-none">
-              <span className="ml-4 leading-none flex items-center gap-2">
-                <IoLogoWhatsapp size={25} />
+            <button className="bg-gray-300 inline-flex py-3 px-5 rounded-lg items-center lg:ml-2 md:ml-2 ml-0 md:mt-4 mt-2 lg:mt-2">
+              <span className="ml-2 leading-none flex items-center gap-2 text-black">
+                <IoLogoWhatsapp size={25} color="#12AF0A"/>
                 <span className="title-font font-normal text-sm">
                   +923013542694
                 </span>

@@ -2,7 +2,7 @@ import React, { PropsWithChildren } from 'react'
 
 const Wrapper = ({children}:PropsWithChildren) => {
   return (
-    <div>{children}</div>
+    <div className='min-h-screen'>{children}</div>
   )
 }
 
