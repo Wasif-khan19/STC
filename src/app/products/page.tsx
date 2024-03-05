@@ -4,7 +4,7 @@ import { allProductFetcherFromSanityType } from "@/components/utils/types";
 
 const Products = async () => {
   let data =
-    (await allProductFetcherFromSanity()) as allProductFetcherFromSanityType;
+    await allProductFetcherFromSanity() as allProductFetcherFromSanityType;
   return (
     <>
       <div className="py-3">

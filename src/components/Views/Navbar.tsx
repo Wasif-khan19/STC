@@ -1,12 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Search } from "lucide-react";
 import { ShoppingCart } from "lucide-react";
-import {
-  LoginLink,
-  RegisterLink,
-  getKindeServerSession,
-} from "@kinde-oss/kinde-auth-nextjs/server";
+import {LoginLink,RegisterLink,getKindeServerSession} from "@kinde-oss/kinde-auth-nextjs/server";
 import { buttonVariants } from "../ui/button";
 import { DropdownMenuDemo } from "../ui/Avatardispaly";
 import { SearchBar } from "../ui/SearchBar";
@@ -66,7 +61,7 @@ const Navbar = () => {
             <Link
               key={index}
               href={item.href}
-              className="cursor-pointer hover:underline mr-5 hover:text-[#3BB77E] text-[#504E4E] font-semibold text-lg duration-300"
+              className="cursor-pointer hover:underline mr-5 hover:text-[#3BB77E] text-[#504E4E] font-normal text-base duration-300"
             >
               {item.label}
             </Link>
@@ -75,7 +70,6 @@ const Navbar = () => {
         <div className="flex space-x-4 items-center">
           <div className="flex items-center space-x-3">
             <SearchBar/>
-            <Search size={23} />
             <ShoppingCart size={23} />
           </div>
           {!user ? (
