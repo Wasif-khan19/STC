@@ -3,8 +3,7 @@ import { allProductFetcherFromSanity } from "@/components/utils/apicalling";
 import { allProductFetcherFromSanityType } from "@/components/utils/types";
 
 const Products = async () => {
-  let data =
-    await allProductFetcherFromSanity() as allProductFetcherFromSanityType;
+  let data = await allProductFetcherFromSanity() as allProductFetcherFromSanityType;
   return (
     <>
       <div className="py-3">
