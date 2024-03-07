@@ -21,9 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <Navbar /> */}
         <Wrapper><ClerkProvider>{children}</ClerkProvider></Wrapper>
-        {/* <Footer /> */}
       </body>
     </html>
   );

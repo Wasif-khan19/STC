@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ShoppingCart } from "lucide-react";
 import { SearchBar } from "../ui/SearchBar";
-import { Button, buttonVariants } from "../ui/button";
+import { Button } from "../ui/button";
+import { UserButton, auth } from "@clerk/nextjs";
 
 interface navArray {
   label: string;
@@ -36,7 +37,8 @@ const navArray: navArray[] = [
   },
 ];
 
-const Navbar = () => {
+export default async function Navbar() {
+  const { userId } = auth();
   return (
     <header className="text-gray-600 body-font">
       <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
@@ -56,7 +58,7 @@ const Navbar = () => {
             <Link
               key={index}
               href={item.href}
-              className="cursor-pointer hover:underline mr-5 hover:text-[#3BB77E] text-[#504E4E] font-normal text-base duration-300"
+              className="cursor-pointer hover:underline mr-5 hover:text-[#3BB77E] text-[#504E4E] duration-300 font-normal"
             >
               {item.label}
             </Link>
@@ -64,19 +66,31 @@ const Navbar = () => {
         </nav>
         <div className="flex space-x-4 items-center">
           <div className="flex items-center space-x-3">
-            <SearchBar/>
+            <SearchBar />
             <ShoppingCart size={23} />
-            <Link href={'/sign-in'}>
-            <Button className="bg-[#3BB77E] hover:bg-[#FDC040]">SignIn</Button>
-            </Link>
-            <Link href={'/sign-up'}>
-            <Button className="bg-[#3BB77E] hover:bg-[#FDC040]">SignUp</Button>
-            </Link> 
+            <div>
+              {userId ? (
+                <div>
+                  <UserButton afterSignOutUrl="/"/>
+                </div>
+              ) : (
+                <div className="space-x-2">
+                  <Link href={"/sign-in"}>
+                    <Button className="bg-[#3BB77E] hover:bg-[#FDC040]">
+                      SignIn
+                    </Button>
+                  </Link>
+                  <Link href={"/sign-up"}>
+                    <Button className="bg-[#3BB77E] hover:bg-[#FDC040]">
+                      SignUp
+                    </Button>
+                  </Link>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
     </header>
   );
-};
-
-export default Navbar;
+}

@@ -15,7 +15,7 @@ export function SearchBar() {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle className="text-center">Search Products</DialogTitle>
+          <DialogTitle className="text-center text-[#3BB77E]">Search Products</DialogTitle>
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
