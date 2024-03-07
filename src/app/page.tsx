@@ -1,4 +1,6 @@
+import { Footer } from "@/components/Views/Footer";
 import Landingpage from "@/components/Views/LandingPage";
+import Navbar from "@/components/Views/Navbar";
 import OurStory from "@/components/Views/OurStory";
 import ProductGridViewer from "@/components/Views/ProductGridViewer";
 import ShopDetails from "@/components/Views/ShopDetails";
@@ -12,14 +14,16 @@ export default async function Home() {
     (await allProductFetcherFromSanity()) as allProductFetcherFromSanityType;
   return (
     <>
+    <Navbar/>
       <Landingpage />
-      <OurStory />
       <Suspense fallback={
         <LoadingComponent isCarousel={true} cardLimit={3}/>
       }>
         <Carousel/>
       </Suspense>
+      <OurStory />
       <ShopDetails />
+      <Footer/>
     </>
   );
 }

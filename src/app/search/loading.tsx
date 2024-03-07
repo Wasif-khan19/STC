@@ -3,7 +3,7 @@ import React from 'react'
 
 const Loading = () => {
   return (
-    <LoadingComponent cardLimit={6}/>
+    <LoadingComponent cardLimit={6} isCarousel={false} />
   )
 }
 
