@@ -1,8 +1,8 @@
-import React, { PropsWithChildren } from 'react'
+import { PropsWithChildren } from 'react'
 
 const Wrapper = ({children}:PropsWithChildren) => {
   return (
-    <div className='min-h-screen'>{children}</div>
+  <div className='min-h-screen'>{children}</div>
   )
 }
 

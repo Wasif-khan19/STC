@@ -40,7 +40,7 @@ const navArray: navArray[] = [
 export default async function Navbar() {
   const { userId } = auth();
   return (
-    <header className="text-gray-600 body-font">
+    <header className="text-gray-600 body-font bg-white shadow-md opacity-95">
       <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <Link
           href="/"
@@ -48,7 +48,7 @@ export default async function Navbar() {
         >
           <Image
             src={"/STC.png"}
-            width={120}
+            width={100}
             height={100}
             alt="Saras trading co. STC rice, spices, pulses, dry fruits"
           />

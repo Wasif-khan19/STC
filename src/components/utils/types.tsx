@@ -24,6 +24,7 @@ export interface singleProductTypeSlug{
 }
 
 export interface singleProductType {
+  size: any;
   weight: string;
   description: singleProductTypeDescription[];
   producttype: string;
