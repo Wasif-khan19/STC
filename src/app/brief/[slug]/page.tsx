@@ -1,6 +1,6 @@
 import BriefProduct from "@/components/Views/BriefProduct";
-import { Footer } from "@/components/Views/Footer";
 import Navbar from "@/components/Views/Navbar";
+import ProductGridViewer from "@/components/Views/ProductGridViewer";
 import {
   allProductFetcherFromSanity,
   detailOfSingleProductsFromSanity,
@@ -10,6 +10,10 @@ import {
   singleProductType,
 } from "@/components/utils/types";
 import { Suspense } from "react";
+import { dataset } from "../../../../sanity/env";
+import { Footer } from "@/components/Views/Footer";
+import BreifLoadingSkeleton from "@/components/ui/BreifLoadingSkeleton";
+import LoadingComponent from "@/components/ui/LoadingComponent";
 
 export async function generateStaticParams() {
   const data =
@@ -37,18 +41,24 @@ export async function generateMetadata({
 
 const brief = async ({ params }: { params: { slug: string } }) => {
   return (
-    <Suspense>
+    <Suspense fallback={
+      <div>
+        <BreifLoadingSkeleton/>
+        <LoadingComponent isCarousel={true} cardLimit={3}/>
+      </div>
+    }>
       <Detail slug={params.slug} />
     </Suspense>
   );
 };
 
 async function Detail({ slug }: { slug: string }) {
-  const data = await detailOfSingleProductsFromSanity(slug);
+  const data = await Promise.all([detailOfSingleProductsFromSanity(slug), allProductFetcherFromSanity()]) as allProductFetcherFromSanityType[]
   return (
     <>
       <Navbar />
-      <BriefProduct product={data.result[0]} />
+      <BriefProduct product={data[0].result[0]} />
+      <ProductGridViewer ProducData={data[1].result.slice(3, 6)}/>
       <Footer />
     </>
   );

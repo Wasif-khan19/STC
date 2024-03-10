@@ -9,7 +9,7 @@ const ProductCard: FC<{ product: singleProductType }> = ({ product }) => {
     return (
         <div className="p-4 w-full md:w-1/3">
             <Link href={`/brief/${product.slug.current}`}>
-                <div className="h-full border-2 border-[#3BB77E] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 border-opacity-60 rounded-lg overflow-hidden">
+                <div className="h-full border-2 border-gray-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 border-opacity-60 rounded-lg overflow-hidden">
                     <Image
                         className=" lg:h-48 md:h-36 w-full object-cover object-center"
                         src={urlForImage(product.image[0])}

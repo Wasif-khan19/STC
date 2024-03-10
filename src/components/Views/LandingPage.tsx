@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { Button, buttonVariants } from "../ui/button";
-import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const Landingpage = () => {
