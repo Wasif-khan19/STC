@@ -5,6 +5,7 @@ import Navbar from "@/components/Views/Navbar";
 import Wrapper from "@/components/Views/Wrapper";
 import { Footer } from "@/components/Views/Footer";
 import { ClerkProvider } from "@clerk/nextjs";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Wrapper>
-          <ClerkProvider>{children}</ClerkProvider>
+          <ClerkProvider>{children}<SpeedInsights/></ClerkProvider>
         </Wrapper>
       </body>
     </html>
