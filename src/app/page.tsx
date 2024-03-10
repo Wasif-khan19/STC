@@ -11,7 +11,7 @@ import { Suspense } from "react";
 
 export default async function Home() {
   let data =
-    (await allProductFetcherFromSanity()) as allProductFetcherFromSanityType;
+    await allProductFetcherFromSanity() as allProductFetcherFromSanityType;
   return (
     <>
     <Navbar/>

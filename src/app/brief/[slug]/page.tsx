@@ -19,9 +19,9 @@ export async function generateStaticParams() {
   const data =
     (await allProductFetcherFromSanity()) as allProductFetcherFromSanityType;
 
-  return data.result.map((item: singleProductType) => {
-    slug: item.slug.current;
-  });
+  return data.result.map((item: singleProductType) => ({
+    slug: item.slug.current,
+  }));
 }
 
 export async function generateMetadata({
@@ -41,24 +41,29 @@ export async function generateMetadata({
 
 const brief = async ({ params }: { params: { slug: string } }) => {
   return (
-    <Suspense fallback={
-      <div>
-        <BreifLoadingSkeleton/>
-        <LoadingComponent isCarousel={true} cardLimit={3}/>
-      </div>
-    }>
+    <Suspense
+      fallback={
+        <div>
+          <BreifLoadingSkeleton />
+          <LoadingComponent isCarousel={true} cardLimit={3} />
+        </div>
+      }
+    >
       <Detail slug={params.slug} />
     </Suspense>
   );
 };
 
 async function Detail({ slug }: { slug: string }) {
-  const data = await Promise.all([detailOfSingleProductsFromSanity(slug), allProductFetcherFromSanity()]) as allProductFetcherFromSanityType[]
+  const data = (await Promise.all([
+    detailOfSingleProductsFromSanity(slug),
+    allProductFetcherFromSanity(),
+  ])) as allProductFetcherFromSanityType[];
   return (
     <>
       <Navbar />
       <BriefProduct product={data[0].result[0]} />
-      <ProductGridViewer ProducData={data[1].result.slice(3, 6)}/>
+      <ProductGridViewer ProducData={data[1].result.slice(3, 6)} />
       <Footer />
     </>
   );
