@@ -10,7 +10,7 @@ const Oil = async () => {
     <>
     <Navbar/>
       <div className="py-32">
-        <h1 className="my-2 text-5xl text-[#253D4E] text-center font-bold">
+        <h1 className="my-2 text-5xl text-[#253D4E] text-center font-extrabold">
           Oil & Ghees
         </h1>
         <p className="text-center text-[#253D4E] py-1">Check What We Have</p>

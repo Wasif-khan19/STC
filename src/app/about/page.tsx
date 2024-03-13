@@ -7,16 +7,9 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <section className="body-font">
+      <section className="body-font py-32">
         <div className="container mx-auto flex px-5 items-center justify-center flex-col">
-          <Image
-            src={"/STC.png"}
-            alt=""
-            width={200}
-            height={200}
-            className="lg:w-2/6 md:w-3/6 w-5/6 object-cover object-center rounded"
-          />
-           <h1 className="text-5xl text-center font-extrabold mt-10">
+           <h1 className="text-5xl text-center font-extrabold mt-10 text-[#253D4E]">
               ABOUT US
             </h1>
           <div className="text-center lg:w-2/3 w-full text-lg font-normal mt-5">
@@ -56,7 +49,7 @@ const About = () => {
               business, we look forward to enhancing your business endeavors and
               adding substantial value to our collaborative efforts.
             </p>
-            <h1 className="text-5xl text-center font-extrabold">
+            <h1 className="text-5xl text-center font-extrabold text-[#253D4E]">
               FACTS
             </h1>
             <div className="container px-5 py-10 mx-auto">
