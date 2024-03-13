@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <section className="body-font relative">
-        <div className="container px-5 py-24 mx-auto">
+      <section className="body-font relative py-32">
+        <div className="container px-5 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-5xl text-2xl font-extrabold title-font mb-4">
               Contact Us

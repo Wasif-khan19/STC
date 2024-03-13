@@ -9,7 +9,7 @@ const Products = async () => {
   return (
     <>
     <Navbar/>
-      <div className="py-3">
+      <div className="py-32">
         <h1 className="my-2 text-5xl text-[#253D4E] text-center font-bold">
           All Products
         </h1>

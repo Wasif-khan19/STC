@@ -40,7 +40,7 @@ const navArray: navArray[] = [
 export default async function Navbar() {
   const { userId } = auth();
   return (
-    <header className="text-gray-600 body-font bg-white shadow-md opacity-95">
+    <header className="text-gray-600 body-font bg-white shadow-md fixed top-0 left-0 w-full z-50 opacity-95">
       <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <Link
           href="/"
