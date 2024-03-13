@@ -83,6 +83,6 @@ export async function detailOfSingleProductsFromSanity(search: string){
     if (!res.ok) {
         return "Error"
     }
-    await new Promise((res)=> setTimeout(res, 5000))
+    await new Promise((res)=> setTimeout(res, 200))
     return res.json();
 }
