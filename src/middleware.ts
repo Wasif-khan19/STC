@@ -2,9 +2,9 @@ import { authMiddleware } from "@clerk/nextjs";
  
 export default authMiddleware({
   // Routes that can be accessed while signed out
-  publicRoutes: ['/', '/products', '/desserts', '/oil', '/rice', '/sauces', '/search', '/spices','/about','/contact', '/components'],
+  publicRoutes: ['/','/api', '/products', '/desserts', '/oil', '/rice', '/sauces', '/search', '/spices','/about','/contact', '/components'],
 
-  ignoredRoutes: ['/no-auth-in-this-route'],
+  ignoredRoutes: ['/no-auth-in-this-route', '/api/cartfunc'],
 });
  
 export const config = {
