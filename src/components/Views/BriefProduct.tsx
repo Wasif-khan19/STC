@@ -19,7 +19,7 @@ const BriefProduct = ({ product }: { product: singleProductType }) => {
   });
   return (
     <section className="text-gray-600 body-font overflow-hidden">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-56 mx-auto">
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           <Image
           width={2000}
@@ -46,12 +46,7 @@ const BriefProduct = ({ product }: { product: singleProductType }) => {
               </span>
             </div>
             <PortableText className='leading-relaxed' content={product.description}/>
-            <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
-              <div className="flex">
-                <span className="mr-3">{product.size}</span>
-              </div>
-            </div>
-            <div>
+            <div className="py-5">
               <Link href={'/contact'} className="ml-auto text-white bg-[#3BB77E] border-0 py-2 px-6 focus:outline-none hover:bg-[#FDC040] rounded">
                 Order Now
               </Link>
