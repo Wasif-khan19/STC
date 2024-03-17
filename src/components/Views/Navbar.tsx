@@ -67,7 +67,6 @@ export default async function Navbar() {
         <div className="flex space-x-4 items-center">
           <div className="flex items-center space-x-3">
             <SearchBar />
-            <ShoppingCart size={23} />
             <div>
               {userId ? (
                 <div>
