@@ -9,7 +9,7 @@ const About = () => {
       <Navbar />
       <section className="body-font py-32">
         <div className="container mx-auto flex px-5 items-center justify-center flex-col">
-           <h1 className="text-5xl text-center font-extrabold mt-10 text-[#253D4E]">
+           <h1 className="text-5xl text-center font-extrabold mt-32 md:mt-20 lg:mt-20 text-[#253D4E]">
               ABOUT US
             </h1>
           <div className="text-center lg:w-2/3 w-full text-lg font-normal mt-5">

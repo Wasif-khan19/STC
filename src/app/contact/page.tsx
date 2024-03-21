@@ -10,7 +10,7 @@ const Contact = () => {
       <section className="body-font relative py-32 text-[#253D4E]">
         <div className="container px-5 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="sm:text-5xl text-2xl font-extrabold title-font mb-4">
+            <h1 className="sm:text-5xl text-2xl font-extrabold title-font mb-4 mt-28 md:mt-5 lg:mt-0">
               Contact Us
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">

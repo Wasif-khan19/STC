@@ -9,7 +9,7 @@ const Rice = async () => {
   return (
     <>
     <Navbar/>
-      <div className="py-32">
+      <div className="mt-64 md:mt-32 lg:mt-32">
         <h1 className="my-2 text-5xl text-[#253D4E] text-center font-extrabold">
           Rice & Flours
         </h1>
